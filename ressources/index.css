@@ -1,0 +1,81 @@
+body {
+	padding: 15px 0 0 15px;
+}
+h1 {
+	font-family: 'Brush Script MT', cursive;
+	color: #12810D;
+}
+.fields {
+	display: inline-flex; width:35%;
+}
+legend {
+	font-weight: bold;
+	color: #12810D;
+	font-family: 'Brush Script MT', cursive;
+}
+fieldset {
+	border-radius: 0px 15px;
+}
+a {
+	text-decoration: none;
+	color: #12810D;
+}
+a:hover {
+	font-weight: bold;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 350px;
+	background: #12810D;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #12810D transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+.button {
+	border-style: none;
+	border-radius: 15px;
+	font-family: 'Brush Script MT', cursive;
+	font-weight: bold;
+	font-size: 15px;
+	color: #12810D;
+	margin-left: 15px;
+}
+.button:hover {
+	background: #A9A9A9;
+}
+.iframe {
+	margin-top: 10px;
+	padding: 10px;
+	overflow: auto;
+	width: 99%;
+	height: 400px;
+	border-style: none;
+	border-radius: 20px;
+}
