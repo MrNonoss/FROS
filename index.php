@@ -2,6 +2,7 @@
 // Start the session and set a random port in the "ttyd" variable
 session_start();
 $_SESSION["ttyd"] = rand(5000, 6000);
+$server_ip = gethostbyname($_SERVER['SERVER_NAME']);
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,7 @@ $_SESSION["ttyd"] = rand(5000, 6000);
 
   <body>
     <h1>OSINT Facilitateur</h1>
-	<script>var site = '<?php echo "http://51.91.108.124:$_SESSION[ttyd]"; ?>'</script> <!-- Grab session "ttyd" var in JavaScript -->
+    <script>var site = '<?php echo "http://$server_ip:$_SESSION[ttyd]"; ?>'</script> <!-- Grab session "ttyd" var in JavaScript -->
     <script src="ressources/js.js"></script> <!-- Include JS script file -->
     <form name="osint" method="POST" action="search.php" target="response">
       <fieldset>
