@@ -1,0 +1,23 @@
+:80 {
+        root * /var/www/html
+        file_server
+        encode zstd gzip
+        php_fastcgi unix//run/php/php8.1-fpm.sock
+        header {
+                X-Xss-Protection "1; mode=block"
+                X-Content-Type-Options "nosniff"
+                X-Frame-Options "SAMEORIGIN"
+                Content-Security-Policy "default-src 'self'; frame-src 'self' "*localhost*"; object-src 'self'; base-uri 'self'; img-src 'self'; frame-ancestors 'self'; font-src 'self>
+                Referrer-Policy "strict-origin-when-cross-origin"
+                Cache-Control "public, max-age=15, must-revalidate"
+                Feature-Policy "accelerometer 'none'; autoplay 'self'; camera 'none'; encrypted-media 'none'; fullscreen 'self'; geolocation 'none'; gyroscope 'none'; magnetometer 'no>
+                Server "No."
+        }
+        log {
+                output file /var/log/caddy/access.log {
+                        roll_size 10MiB
+                        roll_keep 100
+                }
+                level debug
+        }
+}
