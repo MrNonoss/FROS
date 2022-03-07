@@ -13,14 +13,14 @@ $server_ip = gethostbyname($_SERVER['SERVER_NAME']);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title -->
-    <title>OSINT Facilitateur</title>
+    <title>FROS (Facilitateur de Recherches OpenSources)</title>
     <!-- Links -->
     <link rel="shortcut icon" type="image/x-icon" href="ressources/icon.ico" />
     <link rel="stylesheet" type="text/css" href="ressources/index.css">
   </head>
 
   <body>
-    <h1>OSINT Facilitateur</h1>
+    <h1>FROS (Facilitateur de Recherches OpenSources)</h1>
     <script>var site = '<?php echo "http://$server_ip:$_SESSION[ttyd]"; ?>'</script> <!-- Grab session "ttyd" var in JavaScript -->
     <script src="ressources/js.js"></script> <!-- Include JS script file -->
     <form name="osint" method="POST" action="search.php" target="response">
