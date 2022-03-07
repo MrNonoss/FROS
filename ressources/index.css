@@ -6,7 +6,7 @@ h1 {
 	color: #12810D;
 }
 .fields {
-	display: inline-flex; width:35%;
+	display: inline-flex; width:50%;
 }
 legend {
 	font-weight: bold;
