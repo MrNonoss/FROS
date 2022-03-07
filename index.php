@@ -93,7 +93,7 @@ $server_ip = gethostbyname($_SERVER['SERVER_NAME']);
           <a href="https://dehashed.com/" target="_blank">Dehashed</a>
         </p>
         <hr />
-        <p><input type="button" class="button" onclick="bind();" value="Seek!"><input type="button" class="button" onclick="changeUrl();" style="float: right;" value="Afficher le résultat"></p>
+        <p><input type="button" class="button" onclick="bind();" value="Seek!"></p>
       </fieldset>
     </form>
 	<iframe name="response" style="display: none;"> </iframe>  <!-- Hidden iframe to avoid redirection -->
