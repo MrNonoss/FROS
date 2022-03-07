@@ -26,7 +26,7 @@ Chaque outil est installé et utilisable par le serveur web (www-data). Ils sont
 Les programmes sont exécutés grâce à ttyd (https://github.com/tsl0922/ttyd), qui permet d'afficher le terminal sur une page internet. PHP appelle directement les programmes et affiche le résultat en temps réel dans le navigateur.
 
 ## Installation:
-Il vous faut une machine avec un système d'exploitation Ubuntu avec des droits d'administration. L'outil est testé avec Ubuntu 20.04.4 LTS, mais devrait fonctionner.
+Il vous faut une machine avec un système d'exploitation Ubuntu avec des droits d'administration et une dizaine de minutes. L'outil est testé avec Ubuntu 20.04.4 LTS, mais devrait fonctionner sur tous les "debian".
 
 1. Récupérez le script d'installation et exécutez le, soit en root, soit avec sudo: `chmod +x install.sh && sudo ./install.sh` <br>
 2. Laissez faire jusqu'à ce que l'on vous propose d'entrer vos cookies pour GHunt: (https://github.com/mxrch/GHunt#where-i-get-these-cookies-)<br>
