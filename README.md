@@ -36,4 +36,8 @@ Il vous faut une machine avec un système d'exploitation Ubuntu avec des droits 
 * La configuration du serveur caddy se trouve dans le répertoire `/etc/caddy/Caddyfile`.
 * Le corps du site se trouve dans `/var/www/html`.
 
+## Troubleshooting:
+Il est possible que le site ne réponde plus. C'est très probabmement une instance ttyd qui ne s'est pas fermée correctement. Dans ce cas, il suffit dexécuter laz commande suivante:
+`sudo killall ttyd`
+
 Have fun !!
